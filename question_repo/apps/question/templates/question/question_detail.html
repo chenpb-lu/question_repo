@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+<section id="main-content">
+              <section class="wrapper">
+                  <!-- page start-->
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="gritter"></div>
+                            <!--题目详情 start-->
+                            <section class="panel">
+                                <div class="panel-body progress-panel">
+                                  <div class="task-progress">
+                                      <h1 style="color: #000000;"><span class="label label-info" style="margin-bottom: 5px;">入门</span> 7567.单向链表如何使用快速排序算法进行排序；</h1>
+                                  </div>
+                                </div>
+                            </section>
+                            <!--tab nav start-->
+                            <section class="panel">
+                                <header class="panel-heading tab-bg-dark-navy-blue ">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#home" id="tab_home" aria-controls="home" role="tab" data-toggle="tab">题目描述</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#answer" id="tab_answer" aria-controls="answer" role="tab" data-toggle="tab">参考答案</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#other_answer" id="tab_other_answer" aria-controls="other_answer" role="tab" data-toggle="tab">其他回答</a></li>
+                                    </ul>
+                                </header>
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div id="home" class="tab-pane active">
+                                            <h4>题目内容</h4>
+                                            <div class="question_content">
+                                                    单向链表如何使用快速排序算法进行排序；
+                                            </div>
+                                            <hr>
+                                            <h4>我的回答</h4>
+                                            <div class="my_answer">
+                                                    333
+                                            </div>
+                                            <hr>
+                                            <h4>提交回答</h4>
+                                            <div class="answer_submit">
+                                                <form method="post" id="my_anser_form">
+                                                    <input type="hidden" name="csrfmiddlewaretoken" value="ri28ygW11TPyFUvaFgGH9OKmjVnyqUA4L4KZ0u1GskWF5qbLsqfbK7tDk5qh9ekN">
+                                                    <textarea name="answer" id="my_answer" class="form-control" style="height: 300px;"></textarea>
+                                                    <br>
+                                                    <button type="button" id="answer_button" class="btn btn-primary">提交</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div id="answer" class="tab-pane">
+                                                    暂无参考回答
+                                        </div>
+                                        <div id="other_answer" class="tab-pane">
+
+                                                Wait Ajax
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--tab nav start-->
+                        </div>
+                        {% include "question/right.html" %}
+                    </div>
+                  <!-- page end-->
+              </section>
+          </section>
+{% endblock %}
